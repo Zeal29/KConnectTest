@@ -30,22 +30,28 @@
                 <v-btn icon small flat class="grey--text ml-4" :class="{'primary--text' : isLiked >= 1 }" >
                     <v-icon right >thumb_up</v-icon >
                     <span class="grey--text ml-2 mt-1" :class="{'primary--text' : isLiked >= 1 }" >
-                        {{likes}}
+                        {{LikesAndDisCalculator(likes)}}
                      </span >
                 </v-btn >
             </div >
+
+
+            <div class="" >
+                <v-btn icon small flat class="grey--text ml-4" :class="{'primary--text' :  isLiked <= -1 }" >
+                    <v-icon right >thumb_down</v-icon >
+                    <span class="grey--text ml-2 mt-1" :class="{'primary--text' : isLiked <= -1 }" >
+                       {{LikesAndDisCalculator(disLikes)}}
+                     </span >
+                </v-btn >
+            </div >
+
             <!--</v-flex>-->
             <!--<v-flex>-->
-            <div class="" >
-                <v-btn icon small flat class="grey--text ml-4" :class="{'primary--text' : isLiked <= -1}" >
-                    <v-icon >thumb_down</v-icon >
-                </v-btn >
-                {{disLikes}}
-            </div >
+
             <!--</v-flex>-->
             <v-spacer ></v-spacer >
             <v-btn icon small flat class="grey--text mr-5" >
-                <v-icon >comment</v-icon >
+                <v-icon >comment</v-icon >h
             </v-btn >
         </v-layout >
 
@@ -90,6 +96,42 @@
             }
         },
 
+        methods:
+            {
+                LikesAndDisCalculator: (likesOrDis) =>
+                {
+                    let Result = likesOrDis;
+
+                    if (likesOrDis >= 10000000)
+                    {
+                        Result = (Result / 10000000).toFixed(1);
+
+                        Result += "B";
+                        return Result;
+                    }
+                    else if (likesOrDis >= 100000)
+                    {
+                        Result = (Result / 100000).toFixed(1);
+
+                        Result += "M";
+                        return Result;
+                    }
+                    else if (likesOrDis >= 1000)
+                    {
+                        Result = (Result / 1000).toFixed(1);
+
+                        Result += "K";
+                        return Result;
+                    }
+
+
+                    else
+                    {
+                        return Result;
+                    }
+
+                }
+            },
 
         components: {
             'p-img' : PostImages,

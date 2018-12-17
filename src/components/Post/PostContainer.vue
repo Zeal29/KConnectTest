@@ -61,7 +61,7 @@
                         text      : "Is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
                         ImgLinks  : [{id:4 , img:'https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg'}],
                         VidLinks  : ['https://www.youtube.com/watch?v=dbO61cZxEw8'],
-                        likes     : 0,
+                        likes     : 1110,
                         comments  : 0,
                         id        : 2,
                         pageName  : 'jobs'
@@ -78,7 +78,7 @@
                             {id:6 , img:'https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(20).jpg'},
                         ],
                         VidLinks  : ['https://www.youtube.com/watch?v=-vzXo9O9aAg'],
-                        likes     : 0,
+                        likes     : 10000,
                         comments  : 0,
                         id        : 3,
                         pageName  : 'jobs'
@@ -98,7 +98,7 @@
                             {id:12 , img: 'https://cdn.pixabay.com/photo/2015/12/09/01/02/colorful-abstract-background-1084082__340.jpg'},
                         ],
                         VidLinks  : ['https://www.youtube.com/watch?v=cnwDaG99atQ'],
-                        likes     : 0,
+                        likes     : 1001,
                         comments  : 0,
                         id        : 4,
                         pageName  : 'jobs'
@@ -125,7 +125,7 @@
                             'https://youtu.be/tQsU70xSlAM',
                             '<iframe width="560" height="315" src="https://www.youtube.com/embed/P92vsCFKrFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                         ],
-                        likes     : 0,
+                        likes     : 91991299,
                         comments  : 0,
                         id        : 5,
                         pageName  : 'jobs'
